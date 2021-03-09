@@ -13,40 +13,6 @@ import abc
 request_condition = 'Patch'
 
 
-# def SongParseRequest():
-
-#     songs_request_args = reqparse.RequestParser()
-#     songs_request_args.add_argument('Name' , type=song_length , required= False if request_condition == 'Patch' else True)
-#     songs_request_args.add_argument('Duration' , type=duration_positive, required= False if request_condition == 'Patch' else True)
-#     songs_request_args.add_argument('Uploadtime' , type=check_datetime , required= False if request_condition == 'Patch' else True)
-
-#     return songs_request_args
-
-# def PodcastParseRequest():
-
-#     podcast_request_args = reqparse.RequestParser()
-#     podcast_request_args.add_argument('Name' , type=song_length , required= False if request_condition == 'Patch' else True)
-#     podcast_request_args.add_argument('Duration' , type=duration_positive, required= False if request_condition == 'Patch' else True)
-#     podcast_request_args.add_argument('Uploadtime' , type=check_datetime , required= False if request_condition == 'Patch' else True)
-#     podcast_request_args.add_argument('Host' , type=song_length , required= False if request_condition == 'Patch' else True)
-#     podcast_request_args.add_argument('Participant' , type=str , action='append' , required= False)
-
-
-#     return podcast_request_args
-
-# def AudioBookParseRequest():
-
-#     AudioBook_request_args = reqparse.RequestParser()
-#     AudioBook_request_args.add_argument('Title' , type=song_length, required= False if request_condition == 'Patch' else True)
-#     AudioBook_request_args.add_argument('Author' , type=song_length , required= False if request_condition == 'Patch' else True)
-#     AudioBook_request_args.add_argument('Narrator' , type=song_length , required= False if request_condition == 'Patch' else True)
-#     AudioBook_request_args.add_argument('Duration' , type=duration_positive , required= False if request_condition == 'Patch' else True)
-#     AudioBook_request_args.add_argument('Uploadtime' , type=check_datetime , required= False if request_condition == 'Patch' else True)
-
-#     return AudioBook_request_args
-
-
-
 resource_fields = {
     'id':fields.Integer,
     'Name':fields.String,
