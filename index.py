@@ -38,7 +38,7 @@ resource_fields_AudioBook = {
     'Uploadtime':fields.String
 }
 
-# ----------------- SIINGLITON PATTERN FOR CREATING SINGLE INSTANCE OF FLASK AND DATABASE -------------------------
+# ----------------- SINGLETON PATTERN FOR CREATING SINGLE INSTANCE OF FLASK AND DATABASE -------------------------
 class CreateFlaskApp:
 
     __instance = None
